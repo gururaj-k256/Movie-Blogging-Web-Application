@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Sign Up / Log In
+    </title>
+    <link href="logo.png" rel="icon" type="image/icon type">
+    <link href="login.css" rel="stylesheet" type="text/css"> 
+
+    <!--using FontAwesome--------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+
+    <style>
+      body
+      {
+          font-family: 'Josefin Sans';
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+     
+     <script type ="text/javascript" src="login.js"></script>
+  </head>
+  <body>
+    <header>
+            
+        <div class="logo">
+            <a href = "homepage.html"><img src="logo.png" style = "height: 50px; width: 50px; margin-left: 56px; margin-top: 10px;"></a>
+        </div>
+        <div class = "row">
+            <ul class = "main-nav">
+            <li><a href = "homepage.html">HOME</a></li>
+            <li><a href = "aboutUs.html">ABOUT US</a></li>
+            </ul>
+        </div>
+     
+    </header>
+    <div id="box">
+      <div id="main"></div>
+      <div id="loginform">
+          <br>
+        <h1>LOG-IN</h1>
+        <!-- <input type="text" name="" placeholder="Name"><br> -->
+        <input type="text" name="" placeholder="Email"><br>
+        <input type="password" name="" placeholder="Password"><br>
+        <br>
+        <button>LOG-IN</button>
+      </div>
+      <div id ="signupform">
+        <h1>SIGN UP</h1>
+        <input type="text" name="" placeholder="Name"><br>
+        <input type="text" name="" placeholder="Email"><br>
+        <input type="password" name="" placeholder="Password"><br>
+        <button>SIGN-UP</button>
+      </div>
+      <div id ="loginmsg">Have An Account?</div>
+      <div id="signupmsg">Don't Have An Account?</div>
+      <button id = "loginBtn">LOGIN</button>
+    <button id ="signupBtn">SIGN UP</button> 
+  </div>
+  </body>
+</html>

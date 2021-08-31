@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+header
+{
+    background: #111;
+    height:80px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    margin-top: 0px;
+    font-family:'Nunito Sans';
+}
+.main-nav
+{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li{
+    display: inline;
+}
+.main-nav a{
+    color: white;
+    text-decoration:none;
+    padding: 10px 20px;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+}
+.main-nav li a:hover
+{
+    font-family: 'Josefin Sans';
+    background-color: #242424;
+    color:#ffffff;
+    box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+    border-radius: 3px;
+    font-size: 18px;
+    transition: all ease 0.2s;
+}
+.logo img
+{
+    float: left;
+    width: 100px;
+    height: 100px ;
+    
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #111;
+    font-family: 'Josefin Sans';
+    
+    }
+    
+    #box{
+        height: 550px;
+        width: 1200px;
+        background: #092147;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+    }
+    
+    #main
+    {
+        height:650px;
+        width: 850px;
+        background: #0fbcf9;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform:translate(-50%,-50%);
+        z-index:999;
+        background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+        background-size: 400%,400%;
+        animation:gradient 10s ease infinite;
+        border-radius: 20px;
+    
+    }
+    #loginform, #signupform{
+    position:absolute;
+    top:-15%;
+    left:70%;
+    transform: translate(-50%,50%);
+    z-index:999;
+    
+    }
+    
+    #signupform{
+        top:-55%;
+        left:60%;
+        visibility:hidden ;
+    }
+    
+    #loginform h1 , #signupform h1{
+        font-family: 'Josefin Sans';
+        font-size:25px;
+        color: #051937;
+    }
+    #loginform input, #signupform input{
+        height: 40px;
+        width:300px;
+        border:0;
+        outline:none;
+        border-bottom:1px solid #051937;
+        margin:5px;
+        background :none;
+    }
+    input::placeholder{
+        color: #fff;
+    }
+    
+    #loginform button , #signupform button{
+        height : 35px;
+        width:130px;
+        background-color:#051937;
+        font-family: 'Josefin Sans';
+        font-size:16px;
+        border:none;
+        outline:none;
+        border-radius:5px;
+        margin-top:30px;
+        margin-left:175px;
+        color:#fff;
+    }
+    
+    #loginBtn, #signupBtn{
+        height:35px;
+        width:120px;
+        background:transparent;
+        color:#0fbcf9;
+        border:1px solid #0fbcf9;
+        border-radius:5px;
+        outline:none;
+        position:absolute;
+        top:65%;
+        left:75%;
+        transform:translate(-50%,-50%);
+        transition:all 0.5s;
+    }
+    #signupBtn
+    {
+        left:25%;
+    
+    }
+    #loginBtn hover, #signupBtn hover{
+        background-color: #023F92;
+        color: #fff;
+        cursor: pointer;
+    
+    }
+    
+    #loginmsg, #signupmsg
+    {
+        font-family:sans-serif;
+        font-size:25px;
+        color:#0fbcf9;
+        position:absolute;
+        top:35%;
+        left:75%;
+        transform:translate(-50%,-50%);
+        z-index:1;
+    
+    }
+    #signupmsg{
+        left:25%;
+    }
+    
+    @keyframes gradient{
+        0%{background-position: 0% 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0% 50%;}
+    
+    }
